@@ -9,4 +9,5 @@ import com.fr.adaming.entity.User;
 public interface IUserRepository extends JpaRepository<User, Integer>{
 
 	public User findByEmailAndPwd(String email, String pwd);
+	
 }

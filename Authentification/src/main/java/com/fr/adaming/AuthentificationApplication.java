@@ -11,8 +11,7 @@ import com.fr.adaming.service.UserService;
 public class AuthentificationApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext context = SpringApplication.run(AuthentificationApplication.class, args);
-		UserService service =  (UserService) context.getBean("userService");
+		 SpringApplication.run(AuthentificationApplication.class, args);
 	}
 
 }

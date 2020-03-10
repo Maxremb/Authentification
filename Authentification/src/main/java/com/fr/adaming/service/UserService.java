@@ -15,6 +15,7 @@ public class UserService {
 	private IUserRepository repo;
 
 	public User login(String email, String pwd) {
+		
 		return repo.findByEmailAndPwd(email, pwd);
 	}
 
@@ -22,6 +23,7 @@ public class UserService {
 		return repo.findById(id);
 		
 	}
+	
 	
 	public void CreateUser(User user) {
 		repo.save(user);

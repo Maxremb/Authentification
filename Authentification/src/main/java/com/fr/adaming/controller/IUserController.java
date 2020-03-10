@@ -14,7 +14,7 @@ public  interface IUserController {
 	
 	public ResponseEntity<String> login(@RequestBody LoginDto dto);
 	
-	public ResponseEntity<Optional<User>> findUser(AfficherDto dto);
+	public ResponseEntity<Optional<User>> findUser(@RequestBody AfficherDto dto);
 	
 	
 }

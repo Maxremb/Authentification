@@ -26,7 +26,7 @@ public class UserController implements IUserController{
 	@PostMapping(path ="auth/login")
 	public ResponseEntity<String> login(@RequestBody LoginDto dto) {
 		
-		User u = service.login(dto.getEmail(), dto.getPwd());
+		User u = service.login(dto.getMail(), dto.getPassword());
 		if (u != null) {
 			return ResponseEntity.status(HttpStatus.OK).body("SUCCESS");
 		} else {
